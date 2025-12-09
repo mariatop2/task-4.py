@@ -96,3 +96,49 @@ else:
     area = side1 * side2
 print(f"Это {figure}, его площадь: {area}")
 
+response = input("Как твои дела?").strip().lower()
+if response in ["хорошо", "нормально", "отлично"]:
+    print("Рад за тебя!")
+elif response in ["плохо", "нехорошо", ". . ."]:
+    print("Пожалуйста держись!")
+else:
+    print("Интересно!")
+
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+if num1 > num2:
+    result = num1 ** num2
+    print(f"Первое число больше. Результат: {num1} в степени {num2} = {result}")
+elif num2 > num1:
+    result = num2 ** num1
+    print(f"Второе число больше. Результат: {num2} + {num1} = {result}")
+else:
+    result = num1 + num2
+    print(f"Числа равны. Их сумма: {num1} + {num2} = {result}")
+
+new_message = "Hello! How are you?"
+user_response = input("Введите ваш ответ на сообщение: ")
+if new_message[0] == user_response[0]:
+    print(True)
+else:
+    print(False)
+
+length1 = float(input("Введите длину первого отрезка: "))
+length2 = float(input("Введите длину второго отрезка: "))
+if length1 > length2:
+    longer ="первый"
+    difference = length1 - length2
+elif length2 > length1:
+    longer = "второй"
+    difference = length2 - length1
+else:
+    longer = "оба отрезка равны по длине"
+     difference = 0:
+if difference == 0:
+    print(f"{longer}. Разница: {difference}")
+else:
+    print(f"{longer} отрезок длиннее на {difference}")
+
+
+
+
