@@ -138,6 +138,37 @@ if difference == 0:
     print(f"{longer}. Разница: {difference}")
 else:
     print(f"{longer} отрезок длиннее на {difference}")
+s = input("Введите строку: ")
+if len(s) > 0:
+    if s[0] == s[-1]:
+        print(True)
+    else:
+        print(False)
+else:
+    print(False)
+
+num = int(input("Введите число: "))
+if num % 2 == 0:
+    result = num ** 2
+elif num % 3 == 0:
+    result = num ** 3
+else:
+    result = num * 100
+print(result)
+
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+if a > 0 and b < 0:
+    print(False)
+elif a > 0 and b > 0:
+    print(True)
+elif a < 0:
+    print(a + 1000)
+elif b < 0:
+    print(b + 1000)
+
+
+
 
 
 
