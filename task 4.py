@@ -168,6 +168,41 @@ elif b < 0:
     print(b + 1000)
 
 
+s = input("Введите строку: ")
+if len(s) > 0:
+    last_char = s[-1]
+    if last_char in "яиею":
+        print(True)
+    else:
+        print(False)
+else:
+    print(False)
+
+a = float(input("Введите первую сторону: "))
+b = float(input("Введите вторую сторону: "))
+c = float(input("Введите третью сторону: "))
+if a <= or b <= 0 or c <= 0:
+    print(False)
+else:
+    if a + b > and a + c > b + c > a:
+        print(True)
+    else:
+        print(False)
+
+n = int(input())
+last_digit = n % 10
+if last_degit == 0:
+    result = n ** 10
+elif last_degit == 1:
+    result = n // 3
+elif last_degit == 2:
+    result = n ** 2
+print(result)
+
+
+
+
+
 
 
 
