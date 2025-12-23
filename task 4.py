@@ -200,6 +200,92 @@ elif last_degit == 2:
 print(result)
 
 
+password = input("Введите пароль: ")
+if len(password) < 8 or password == "qwerty123":
+    print(False)
+else:
+    print(True)
+
+pc_number = 777
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+if (num1 < pc_number and num2 > pc_number) or (num1 > pc_number and num2 >pc_number):
+    print(True)
+else:
+    print(False)
+
+lamp_1 = 0
+lamp_2 = 0
+print("Какую лампочку зажечь?")
+answer = input().strip()
+if answer == "1":
+    lamp_2 = 1
+else:
+    print("Обе лампочки не горят")
+
+
+
+
+
+switch_1 = False
+switch_2 = False
+user_input = input("Включить? ").strip().lower()
+user_input == "да":
+switch_1 = True
+switch_2 = True
+    print("Все включено")
+    print(f"swith_1: {switch_1}, swith_2: {switch_2}")
+else:
+print(f"Изначальные значения: swith_1: {switch_1}, swith_2: {switch_2}")
+
+try:
+     if number > 0 and number % 2 == 0:
+        print(True, "even")
+    elif number > 0 and number % 2 != 0:
+        print(True, "odd")
+    else:
+        print(False)
+expert ValueError:
+     print(False)
+
+string = input("Введите строку: ")
+if len(string) > 0 and string[0] == '/':
+      print("command")
+else:
+      print("It's string")
+
+
+string = input("Введите произвольную строку: ")
+length = len(string)
+if length == 0:
+    print(None)
+elif length <= 5:
+    print("short")
+elif 6 <= length <= 10:
+    print("normal")
+else:
+    print("long")
+
+try:
+   number = int(input("Введите целое число: "))
+   if number < 0:
+     number = 1_000_000
+     print(number)
+    elif number == 0:
+       number = 2
+       print(number ** 2)
+    else:
+       print(number ** 3)
+expert ValueError:
+print("Ошибка: введено не целое число.")
+
+number_1 = 10
+number_2 = 100
+user_number = int(input("Введите свое число: "))
+if number_1 < user_number < number_2:
+        print(True)
+else:
+    print(False)
 
 
 
